@@ -16,7 +16,7 @@ data1<- read.csv("~/DDP_Finalproject/57b46c40-8cd0-44f0-bb12-b47778bb9861_Data.c
 View(data1)
 
 #Manipulating the Data 
-P-1<- data1 %>% 
+p_1<- data1 %>% 
   filter(Series.Name == "Adjusted net national income (annual % growth)") %>%
   select(Country.Code, X2011..YR2011., X2012..YR2012., X2013..YR2013.,X2014..YR2014.) %>%
   mutate("2011" = round(as.numeric(X2011..YR2011.), 1),
